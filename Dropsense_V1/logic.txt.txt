@@ -1,0 +1,11 @@
+# V1 control flow logic
+so basically in V1 prototype of this project the flow goes something like this 
+
+1. the MPU605 sensor iniitializes
+2. the mpu6050 captures the data(acceleration and gyroscope values)  at a veyr high speed
+3. these values are then used to calculatte the g-force (the formula used is sqrt(ax^2+ay^2+az^2)/9.81
+4. then the thresholds are defined like when the device is at rest the gforce is 1G when it is in freefall the gforce exerted is 0G and when it hits the ground the gforce can be anywhere from 5-15-20Gs
+5. after this the DATA IS LOGGED TO THE SD CARD 
+
+AND THIS IS BASICALLY ALL WHICH IS REQUIRED FOR THE PROOF OF CONCEPT 
+AFTER THIS WE MOVE ONTO INTGRATION THIS ENTIRE SYSTEM ONTO A PCB
