@@ -11,3 +11,24 @@ so basically in V1 prototype of this project the flow goes something like this
 
 AND THIS IS BASICALLY ALL WHICH IS REQUIRED FOR THE PROOF OF CONCEPT 
 AFTER THIS WE MOVE ONTO INTGRATION THIS ENTIRE SYSTEM ONTO A PCB
+
+# PCB design 
+
+the pcb consists of these parts 
+1. Esp32 S3 wroom 1 module 
+2. mpu6050 (smd)
+3. sd card holdee (DM3AT)
+4. ME6211 voltage regulator 
+5. TP4056 battery protection module 
+6. Micro usb (for programming the esp32 and also charging the battery)
+
+The 5v from the micro usb port is fed into the voltage regulator module and then the 3v3 volts is fed into the TP4056 module for charging the batter and also for the battery protection then that power is fed into the esp32 s3 wroom 1 module the mpu605 and also the sd card slot for powering the sd card when i'll be connected to the holder
+
+while uploading the code keep in mind to press the boot button then the enable button and then release the boot button first and then release the enable button 
+
+while charging the battery the green led will be on and when done charging and it is on stand by the red led glows 
+
+Many decoupling capacitors are added near the esp32, mpu605 and the sd card holder, and the BMS to clean the high frequenct niose and also provide stable power...
+
+overall the pcb features a small size factor so small so that it can fit inside your pocket easily 
+
