@@ -4066,6 +4066,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 55.88) (xy 29.21 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7228e6b0-7bf4-449a-b867-7b64c95f7436")
+	)
+	(wire
+		(pts
 			(xy 167.64 38.1) (xy 195.58 38.1)
 		)
 		(stroke
@@ -5355,7 +5365,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "red"
 			(at 189.23 79.0574 90)
 			(effects
 				(font
@@ -6119,7 +6129,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a4d21eb-e81c-4824-8817-4e92fb78ecf3")
-		(property "Reference" "R2(red)1"
+		(property "Reference" "R2"
 			(at 187.96 62.2299 0)
 			(effects
 				(font
@@ -6173,7 +6183,7 @@
 		(instances
 			(project "dropsensePCBV1"
 				(path "/69b1a30b-982d-40a0-b848-7776f317f216"
-					(reference "R2(red)1")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -6775,7 +6785,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Conn_01x02_Socket"
+		(property "Value" "battery socket"
 			(at 242.57 24.7649 90)
 			(effects
 				(font
@@ -6836,7 +6846,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab0f1a98-7c9e-4d57-8083-e2de44f8c638")
-		(property "Reference" "R1(green)1"
+		(property "Reference" "R1"
 			(at 175.26 62.2299 0)
 			(effects
 				(font
@@ -6890,7 +6900,7 @@
 		(instances
 			(project ""
 				(path "/69b1a30b-982d-40a0-b848-7776f317f216"
-					(reference "R1(green)1")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -7038,7 +7048,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 29.21 53.34 0)
+		(at 29.21 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7047,7 +7057,7 @@
 		(fields_autoplaced yes)
 		(uuid "b5bf9b50-2b57-4fff-b0d6-2240b9b2cc2f")
 		(property "Reference" "#PWR09"
-			(at 29.21 59.69 0)
+			(at 29.21 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7056,7 +7066,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 29.21 58.42 0)
+			(at 29.21 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7064,7 +7074,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 53.34 0)
+			(at 29.21 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7073,7 +7083,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 53.34 0)
+			(at 29.21 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7082,7 +7092,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 29.21 53.34 0)
+			(at 29.21 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7541,7 +7551,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "green"
 			(at 176.53 79.0574 90)
 			(effects
 				(font
