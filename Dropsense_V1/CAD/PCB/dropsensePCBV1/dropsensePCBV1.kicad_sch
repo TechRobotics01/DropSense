@@ -3628,6 +3628,12 @@
 		(uuid "7d3b5ce8-19cc-4f82-a7f4-aca00da8ff02")
 	)
 	(junction
+		(at 241.3 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f43b6cd-32c2-473c-96c7-f31b3ae8be8e")
+	)
+	(junction
 		(at 52.07 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3698,12 +3704,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "edd89a13-4055-4c5d-b518-3577434ba508")
-	)
-	(junction
-		(at 238.76 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f6c8a5c3-e8de-4012-9cf7-86dd66d4ecc5")
 	)
 	(bus_entry
 		(at 107.95 49.53)
@@ -3916,6 +3916,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 41.91) (xy 238.76 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4920ee27-7d47-4b89-ab1a-06622415033e")
+	)
+	(wire
+		(pts
 			(xy 219.71 66.04) (xy 223.52 66.04)
 		)
 		(stroke
@@ -3943,16 +3953,6 @@
 			(type default)
 		)
 		(uuid "4c4be517-b512-4ef4-9696-936fbfce7a85")
-	)
-	(wire
-		(pts
-			(xy 246.38 54.61) (xy 248.92 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4cd5e026-4021-48ec-818a-097bd1a32943")
 	)
 	(wire
 		(pts
@@ -4116,7 +4116,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 41.91) (xy 238.76 44.45)
+			(xy 241.3 41.91) (xy 241.3 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4416,6 +4416,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 54.61) (xy 231.14 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c78c993f-b5f3-4bce-8e43-971eb346ebba")
+	)
+	(wire
+		(pts
 			(xy 203.2 66.04) (xy 205.74 66.04)
 		)
 		(stroke
@@ -4456,7 +4466,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 52.07) (xy 247.65 52.07)
+			(xy 248.92 52.07) (xy 247.65 52.07)
 		)
 		(stroke
 			(width 0)
@@ -4606,7 +4616,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 41.91) (xy 238.76 41.91)
+			(xy 252.73 41.91) (xy 241.3 41.91)
 		)
 		(stroke
 			(width 0)
@@ -6109,7 +6119,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a4d21eb-e81c-4824-8817-4e92fb78ecf3")
-		(property "Reference" "R2(red)"
+		(property "Reference" "R2(red)1"
 			(at 187.96 62.2299 0)
 			(effects
 				(font
@@ -6163,7 +6173,7 @@
 		(instances
 			(project "dropsensePCBV1"
 				(path "/69b1a30b-982d-40a0-b848-7776f317f216"
-					(reference "R2(red)")
+					(reference "R2(red)1")
 					(unit 1)
 				)
 			)
@@ -6535,7 +6545,7 @@
 	)
 	(symbol
 		(lib_id "Regulator_Linear:ME6211C10M5")
-		(at 238.76 52.07 180)
+		(at 241.3 52.07 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6544,7 +6554,7 @@
 		(fields_autoplaced yes)
 		(uuid "8ced3924-41a7-4fde-ad28-50e7b582ef19")
 		(property "Reference" "U4"
-			(at 238.76 59.69 0)
+			(at 241.3 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6552,7 +6562,7 @@
 			)
 		)
 		(property "Value" "ME6211C10M5"
-			(at 238.76 62.23 0)
+			(at 241.3 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6560,7 +6570,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 239.268 38.608 0)
+			(at 241.808 38.608 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6569,7 +6579,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_MICRONE-Nanjing-Micro-One-Elec-ME6211C33R5G_C235316.pdf"
-			(at 238.506 35.052 0)
+			(at 241.046 35.052 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6578,7 +6588,7 @@
 			)
 		)
 		(property "Description" "300mA low dropout linear regulator, shutdown pin, 6.5V max input voltage, 1.0V fixed positive output, SOT-23-5"
-			(at 236.982 36.83 0)
+			(at 239.522 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6774,7 +6784,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_ACH_BM01B-ACHSS-A-GAN-ETF_1x01-1MP_P1.20mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 238.76 22.86 0)
 			(effects
 				(font
@@ -6826,7 +6836,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab0f1a98-7c9e-4d57-8083-e2de44f8c638")
-		(property "Reference" "R1(green)"
+		(property "Reference" "R1(green)1"
 			(at 175.26 62.2299 0)
 			(effects
 				(font
@@ -6880,7 +6890,7 @@
 		(instances
 			(project ""
 				(path "/69b1a30b-982d-40a0-b848-7776f317f216"
-					(reference "R1(green)")
+					(reference "R1(green)1")
 					(unit 1)
 				)
 			)
