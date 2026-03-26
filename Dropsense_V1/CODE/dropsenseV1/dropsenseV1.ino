@@ -9,10 +9,19 @@ Adafruit_Sensor *mpu_ax, *mpu_gr;
 const int CS = 5;
 File droplog; 
 
+float fallTime = 0;  
+float height = 0;
+
 bool fall = false;
-bool isStatic = true;   // ✅ renamed
+bool isStatic = true;
 bool impt = false;
+
 String event = "stat";
+
+float gForce = 0;
+
+unsigned long fallstart = 0;
+unsigned long impact = 0;
 
 void setup() {
   Serial.begin(115200);
@@ -51,6 +60,16 @@ void setup() {
 }
 
 void loop() {
+
+  readmpu();
+  status();
+  hndlimpt();
+  logdata();
+
+  delay(1);
+}
+
+void readmpu(){
   sensors_event_t ax;
   sensors_event_t gr;
 
@@ -61,31 +80,74 @@ void loop() {
   float ay_val = ax.acceleration.y;
   float az_val = ax.acceleration.z;
 
-  float gForce = sqrt(ax_val * ax_val + ay_val * ay_val + az_val * az_val) / 9.81;
+  gForce = sqrt(ax_val * ax_val + ay_val * ay_val + az_val * az_val) / 9.81;
+}
 
-  droplog = SD.open("/droplog.csv", FILE_APPEND);
-
-  if (gForce < 1 && gForce > 0) {
+void status(){
+  if (gForce < 0.30 && gForce > 0 && !fall) {
     fall = true;
     isStatic = false;
     impt = false;
     event = "fall";
   }
 
-  else if (gForce > 1 && gForce < 1.5) {
+  else if (gForce > 0.85 && gForce < 1.5) {
     fall = false;
     isStatic = true;
     impt = false;
     event = "stat";
   }
 
-  else if (gForce > 2.5) {
-    fall = false;
-    isStatic = false;
+  else if (gForce > 5 && fall) {  
     impt = true;
     event = "impt";
   }
+}
 
+void hndlimpt(){
+  static bool fallstarted = false;
+  static bool impactdetected = false;
+
+  if (fall && !fallstarted){
+    fallstarted = true;
+    fallstart = millis();
+    Serial.println("FALLING...");
+  }
+
+  else if (impt && !impactdetected){
+    impactdetected = true;
+    impact = millis();
+    Serial.println("IMPACT DETECTED!!!");
+
+    fallTime = (impact - fallstart) / 1000.0;
+    height = 0.5 * 9.8 * fallTime * fallTime;
+    height *= 1.3;                             // height callibration 
+
+    Serial.print("TIME PERIOD = ");
+    Serial.println(fallTime);
+
+    Serial.print("HEIGHT = ");
+    Serial.println(height);
+
+    Serial.print("GFORCE = ");
+    Serial.println(gForce);
+  }
+
+  if (impt){
+    delay(2000);
+
+    fall = false;
+    impt = false;
+    event = "stat";
+
+    fallstarted = false;
+    impactdetected = false;
+  }
+}
+
+void logdata(){ 
+  droplog = SD.open("/droplog.csv", FILE_APPEND); 
+ 
   if (droplog) {
     droplog.print(millis());
     droplog.print(",");
@@ -94,11 +156,12 @@ void loop() {
     droplog.println(event);
     droplog.close();
   }
+}
 
-  Serial.print("G: ");
-  Serial.print(gForce);
-  Serial.print(" | ");
-  Serial.println(event);
+void smoothGForce() {
+  static float prevG = 0;   
+  float alpha = 0.7;
 
-  delay(5);
+  gForce = alpha * prevG + (1 - alpha) * gForce;
+  prevG = gForce;
 }
