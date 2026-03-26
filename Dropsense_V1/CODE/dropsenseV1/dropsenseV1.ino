@@ -11,6 +11,7 @@ File droplog;
 
 float fallTime = 0;  
 float height = 0;
+float maxG = 0;
 
 bool fall = false;
 bool isStatic = true;
@@ -80,7 +81,13 @@ void readmpu(){
   float ay_val = ax.acceleration.y;
   float az_val = ax.acceleration.z;
 
-  gForce = sqrt(ax_val * ax_val + ay_val * ay_val + az_val * az_val) / 9.81;
+  float rawG = sqrt(ax_val * ax_val + ay_val * ay_val + az_val * az_val) / 9.81;
+
+  gForce = rawG;
+
+  if(rawG > maxG){
+    maxG = rawG;
+  }
 }
 
 void status(){
@@ -121,7 +128,7 @@ void hndlimpt(){
 
     fallTime = (impact - fallstart) / 1000.0;
     height = 0.5 * 9.8 * fallTime * fallTime;
-    height *= 1.3;                             // height callibration 
+    height *= 1.3;   
 
     Serial.print("TIME PERIOD = ");
     Serial.println(fallTime);
@@ -129,12 +136,14 @@ void hndlimpt(){
     Serial.print("HEIGHT = ");
     Serial.println(height);
 
-    Serial.print("GFORCE = ");
-    Serial.println(gForce);
+    Serial.print("PEAK GFORCE = ");   
+    Serial.println(maxG);
   }
 
   if (impt){
     delay(2000);
+
+    maxG = 0;   
 
     fall = false;
     impt = false;
