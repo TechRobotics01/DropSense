@@ -19,14 +19,14 @@ This was designed using the following softwares
 2. **KiCad** for the PCB design of this device
 
 ## CONTROL LOGIC
-***WORK DONE  FOR V1***
-  1. This is the prototyping stage
+  1. in the prototyping stage
   2. The MPU6050 reads the values at a very high speed
   3. and then the valuse are logged into the sd card in a .csv file format
   4. then for prototyping the .csv file was read and analyzed
   5. figured out the threshold values such ad the gForce values which are required for automatic triggering and logging of data
   6. for eg when the device approached near 0 gForce vaklues the device is considered in a freefall and then the mpu605 starts to log the values in the sd card module and when the impact happend and the gForce stabelized at around 1Gfprce we can consider the device is stationary again and the Esp32 enters deep sleep mode again to save battery power
   7. the .csv file can then be used to plot graphs in different types of softwares for crash analysis
+  8. also the crutial values such as drop height and maximum gForce of the crashb and the time time from falling to the crash is printed on the screen of the reciever 
 
 ## APPLICATIONS 
 **this device can be used and applicated in places where gForce or acceleration and decelleration needs to be preciself analyzed**
