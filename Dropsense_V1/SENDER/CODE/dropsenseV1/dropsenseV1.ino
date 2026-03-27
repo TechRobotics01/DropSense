@@ -2,6 +2,10 @@
 #include <Wire.h>
 #include <SPI.h>
 #include <SD.h>
+#include "WiFi.h"
+#include <esp_now.h>
+
+uint8_t broadcastAddress[] = {0xC8, 0x2E, 0x18, 0xF7, 0x8F, 0xAC};
 
 Adafruit_MPU6050 mpu;
 Adafruit_Sensor *mpu_ax, *mpu_gr;
@@ -12,6 +16,7 @@ File droplog;
 float fallTime = 0;  
 float height = 0;
 float maxG = 0;
+float gForce = 0;
 
 bool fall = false;
 bool isStatic = true;
@@ -19,13 +24,43 @@ bool impt = false;
 
 String event = "stat";
 
-float gForce = 0;
-
 unsigned long fallstart = 0;
 unsigned long impact = 0;
 
+typedef struct struct_message  {
+  float falltime1;
+  float height1;
+  float maxG1;
+  float gForce1; 
+
+} struct_message;
+
+struct_message dropdat;
+
+esp_now_peer_info_t peerInfo;
+
+
 void setup() {
   Serial.begin(115200);
+  WiFi.mode(WIFI_STA);
+  Serial.println(WiFi.macAddress());
+
+  if (esp_now_init() != ESP_OK){
+    Serial.println("Error initializing esp-now");
+    return;
+  }
+
+  esp_now_register_send_cb(senddata);
+
+  memcpy(peerInfo.peer_addr, broadcastAddress, 6);
+  peerInfo.channel = 0;
+  peerInfo.encrypt = false;
+
+  if (esp_now_add_peer(&peerInfo) != ESP_OK){
+    Serial.println("Failed to add peer");
+    return;
+  }
+
   while (!Serial) delay(10);
 
   Serial.println("MPU6050 + SD test");
@@ -138,6 +173,9 @@ void hndlimpt(){
 
     Serial.print("PEAK GFORCE = ");   
     Serial.println(maxG);
+
+    setdatstosend();
+
   }
 
   if (impt){
@@ -173,4 +211,28 @@ void smoothGForce() {
 
   gForce = alpha * prevG + (1 - alpha) * gForce;
   prevG = gForce;
+}
+
+void senddata(const wifi_tx_info_t *info, esp_now_send_status_t status){
+  Serial.print("data sent");
+  Serial.println(status == ESP_NOW_SEND_SUCCESS ? "DELIVERY SUCCESS" : "DELIVERY FAIL");
+}
+
+void setdatstosend(){
+  dropdat.falltime1 = fallTime;
+  dropdat.height1 = height;
+  dropdat.maxG1 = maxG;
+  dropdat.gForce1 = gForce;
+
+  esp_err_t  result = esp_now_send(broadcastAddress, (uint8_t *)
+   &dropdat, sizeof(dropdat));
+
+   if(result == ESP_OK){
+    Serial.print("sent with success");
+   }
+
+   else{
+    Serial.println("error sending dats");
+   }
+  delay(10);
 }
