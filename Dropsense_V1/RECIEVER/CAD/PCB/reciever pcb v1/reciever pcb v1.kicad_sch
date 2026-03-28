@@ -3035,6 +3035,12 @@
 		(uuid "ce80dc18-a544-4796-95c7-920aa674423c")
 	)
 	(junction
+		(at 198.12 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dc1d3a4e-7012-40a3-a50c-4eb04db7fa38")
+	)
+	(junction
 		(at 30.48 16.51)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3292,7 +3298,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 53.34) (xy 198.12 68.58)
+			(xy 198.12 54.61) (xy 198.12 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3392,6 +3398,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 46.99) (xy 193.04 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bc32d91-2270-4a70-9cfe-0188ca6a4301")
+	)
+	(wire
+		(pts
 			(xy 172.72 35.56) (xy 172.72 46.99)
 		)
 		(stroke
@@ -3412,7 +3428,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 46.99) (xy 193.04 46.99)
+			(xy 200.66 46.99) (xy 198.12 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4850,7 +4866,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 26.3652 24.13 0)
 			(effects
 				(font
@@ -4920,7 +4936,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
 			(at 78.74 142.24 0)
 			(effects
 				(font
@@ -4988,7 +5004,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 40.64 133.858 90)
 			(effects
 				(font
@@ -5058,7 +5074,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 148.082 58.42 90)
 			(effects
 				(font
@@ -5128,7 +5144,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_Micro-B_Technik_TWP-4002D-H3"
 			(at 241.3 50.8 0)
 			(effects
 				(font
@@ -5210,7 +5226,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 31.4452 24.13 0)
 			(effects
 				(font
@@ -5280,7 +5296,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 28.448 49.53 90)
 			(effects
 				(font
@@ -5348,7 +5364,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 173.99 113.538 90)
 			(effects
 				(font
@@ -5418,7 +5434,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
 			(at 93.98 48.26 0)
 			(effects
 				(font
@@ -5504,7 +5520,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 80.01 133.858 90)
 			(effects
 				(font
@@ -5574,7 +5590,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 191.262 58.42 90)
 			(effects
 				(font
@@ -5644,7 +5660,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 33.9852 154.94 0)
 			(effects
 				(font
@@ -5846,7 +5862,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 149.86 66.04 0)
 			(effects
 				(font
@@ -5923,7 +5939,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 154.94 113.538 90)
 			(effects
 				(font
@@ -5993,7 +6009,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 163.83 66.04 0)
 			(effects
 				(font
@@ -6214,7 +6230,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
 			(at 203.2 77.47 0)
 			(effects
 				(font
@@ -6507,7 +6523,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 209.2452 40.64 0)
 			(effects
 				(font
@@ -6643,7 +6659,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm"
 			(at 27.94 139.7 0)
 			(effects
 				(font
@@ -6779,7 +6795,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 215.5952 76.2 0)
 			(effects
 				(font
@@ -6849,7 +6865,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 37.7952 24.13 0)
 			(effects
 				(font
@@ -6985,7 +7001,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 234.6452 41.91 0)
 			(effects
 				(font
@@ -7251,7 +7267,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 62.23 15.748 90)
 			(effects
 				(font
@@ -7321,7 +7337,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 162.052 58.42 90)
 			(effects
 				(font
@@ -7431,7 +7447,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 198.12 49.53 0)
+		(at 198.12 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7440,7 +7456,7 @@
 		(fields_autoplaced yes)
 		(uuid "ff4653a6-a0d6-4bfe-a34e-ca77570ca76a")
 		(property "Reference" "C3"
-			(at 201.93 48.2599 0)
+			(at 201.93 49.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7449,7 +7465,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 201.93 50.7999 0)
+			(at 201.93 52.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7457,8 +7473,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 199.0852 53.34 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 199.0852 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7467,7 +7483,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 198.12 49.53 0)
+			(at 198.12 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7476,7 +7492,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 198.12 49.53 0)
+			(at 198.12 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
