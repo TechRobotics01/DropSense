@@ -39,6 +39,8 @@ This was designed using the following softwares
 google.com
 https://randomnerdtutorials.com/arduino-mpu-6050-accelerometer-gyroscope/
 Adafruit (use for taking out the values from mpu6050)
+random nerd tutorials 
+
 
 
 
