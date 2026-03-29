@@ -1,0 +1,12 @@
+Plotted to 'C:\Users\DELL\Desktop\MISSION FALLOUT\DropSense\Dropsense_V1\SENDER\CAD\PCB\FINAL PERFECTED PCB FILE\dropsensePCBV1-F_Cu.gbr'.
+Plotted to 'C:\Users\DELL\Desktop\MISSION FALLOUT\DropSense\Dropsense_V1\SENDER\CAD\PCB\FINAL PERFECTED PCB FILE\dropsensePCBV1-B_Cu.gbr'.
+Plotted to 'C:\Users\DELL\Desktop\MISSION FALLOUT\DropSense\Dropsense_V1\SENDER\CAD\PCB\FINAL PERFECTED PCB FILE\dropsensePCBV1-F_Paste.gbr'.
+Plotted to 'C:\Users\DELL\Desktop\MISSION FALLOUT\DropSense\Dropsense_V1\SENDER\CAD\PCB\FINAL PERFECTED PCB FILE\dropsensePCBV1-B_Paste.gbr'.
+Plotted to 'C:\Users\DELL\Desktop\MISSION FALLOUT\DropSense\Dropsense_V1\SENDER\CAD\PCB\FINAL PERFECTED PCB FILE\dropsensePCBV1-F_Silkscreen.gbr'.
+Plotted to 'C:\Users\DELL\Desktop\MISSION FALLOUT\DropSense\Dropsense_V1\SENDER\CAD\PCB\FINAL PERFECTED PCB FILE\dropsensePCBV1-B_Silkscreen.gbr'.
+Plotted to 'C:\Users\DELL\Desktop\MISSION FALLOUT\DropSense\Dropsense_V1\SENDER\CAD\PCB\FINAL PERFECTED PCB FILE\dropsensePCBV1-F_Mask.gbr'.
+Plotted to 'C:\Users\DELL\Desktop\MISSION FALLOUT\DropSense\Dropsense_V1\SENDER\CAD\PCB\FINAL PERFECTED PCB FILE\dropsensePCBV1-B_Mask.gbr'.
+Plotted to 'C:\Users\DELL\Desktop\MISSION FALLOUT\DropSense\Dropsense_V1\SENDER\CAD\PCB\FINAL PERFECTED PCB FILE\dropsensePCBV1-Edge_Cuts.gbr'.
+Created Gerber job file 'C:\Users\DELL\Desktop\MISSION FALLOUT\DropSense\Dropsense_V1\SENDER\CAD\PCB\FINAL PERFECTED PCB FILE\dropsensePCBV1-job.gbrjob'.
+Info: Done.
+Info: Done.
