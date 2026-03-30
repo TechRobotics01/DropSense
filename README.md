@@ -40,6 +40,7 @@ google.com
 https://randomnerdtutorials.com/arduino-mpu-6050-accelerometer-gyroscope/
 Adafruit (use for taking out the values from mpu6050)
 random nerd tutorials 
+grabcad for the 3d step files of the tft and micro usb 
 
 
 
