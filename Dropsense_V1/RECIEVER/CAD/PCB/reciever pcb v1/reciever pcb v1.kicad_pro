@@ -490,7 +490,7 @@
       "plot": "./",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../reciever pcb v1.step",
       "svg": "",
       "vrml": ""
     },
