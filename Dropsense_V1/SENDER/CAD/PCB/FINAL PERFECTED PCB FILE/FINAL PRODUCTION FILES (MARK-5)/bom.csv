@@ -1,19 +1,19 @@
-﻿Designator,Footprint,Quantity,Value,LCSC Part #
-"C1, C3, C6",0805,3,0.1uF,
-"C2, C4, C5, C8, C9",0805,5,10uF,
-C7,0805,1,100uF,
-D1,0805,1,D_Schottky,
-D2,0805,1,green,
-D3,0805,1,red,
-J1,microSD_HC_Hirose_DM3AT-SF-PEJM5,1,Micro_SD_Card_Det_Hirose_DM3AT,
-J2,USB_Micro-B_Amphenol_10103594-0001LF_Horizontal,1,USB_B_Micro,
-J3,JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,1,battery socket,
-MPU6050,InvenSense_QFN-24_4x4mm_P0.5mm,1,MPU-6050,
-"R1, R2",0805,2,330R,
-R3,0805,1,1.2R,
-"R4, R5",0805,2,4.7R,
-"R6, R7",0805,2,10R,
-"SW1, SW2",SW_PUSH_6mm_H4.3mm,2,SW_Push,
-U1,ESP32-S3-WROOM-1,1,ESP32-S3-WROOM-1,
-U3,SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias,1,TP4056-42-ESOP8,
-U4,SOT-23-5,1,ME6211C10M5,
+﻿Designator,Value,Quantity,Total price(exc GST),Source,Footprint
+"C1, C3, C6",0.1uF,10,53,https://evelta.com/0-1uf-100v-10-x7r-0805-mlcc-multilayer-ceramic-capacitor-cc0805kkx7r0bb104/,805
+"C2, C4, C5, C8, C9",10uF,10,53.9,https://evelta.com/10uf-25v-10-x5r-0805-capacitor/,805
+C7,100uF,10,96,,805
+D1,D_Schottky,1,,,805
+D2,green,1,,,805
+D3,red,1,,,805
+J1,Micro_SD_Card_Det_Hirose_DM3AT,1,291,https://www.mouser.in/ProductDetail/Hirose-Connector/DM3AT-SF-PEJM541?qs=iyLo5FA4poAlFf1J7h9Amg%3D%3D,microSD_HC_Hirose_DM3AT-SF-PEJM5
+J2,USB_B_Micro,1,https://www.mouser.in/ProductDetail/TE-Connectivity/1981584-1?qs=ozkTL%2FUej0TLYxjQLPnd2Q%3D%3D,,USB_Micro-B_Amphenol_10103594-0001LF_Horizontal
+J3,battery socket,1,,,JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical
+MPU6050,MPU-6050,1,,,InvenSense_QFN-24_4x4mm_P0.5mm
+"R1, R2",330R,2,,,805
+R3,1.2R,1,,,805
+"R4, R5",4.7R,2,,,805
+"R6, R7",10R,2,,,805
+"SW1, SW2",SW_Push,2,,,SW_PUSH_6mm_H4.3mm
+U1,ESP32-S3-WROOM-1,1,512.99,https://www.mouser.in/ProductDetail/Espressif-Systems/ESP32-S3-WROOM-1-N4R8?qs=Li%252BoUPsLEnsFpZnU9mcr%2FQ%3D%3D,ESP32-S3-WROOM-1
+U3,TP4056-42-ESOP8,1,,,SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias
+U4,ME6211C10M5,1,,,SOT-23-5
