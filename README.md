@@ -25,6 +25,8 @@ and the display shows all the info about the drop when it recieves the data frop
 <img width="1167" height="637" alt="image" src="https://github.com/user-attachments/assets/578705b5-3e22-4886-8b45-ae9020cdbfc3" />
 <img width="795" height="540" alt="image" src="https://github.com/user-attachments/assets/03c8cb1f-d1ef-437b-b207-1f0e0116e721" />
 
+## ZINE PAGE
+<img width="1398" height="2000" alt="DROPSENSE (1)" src="https://github.com/user-attachments/assets/e06ab194-282c-4cad-b532-dbad0af92696" />
 
 
 # Hardware
