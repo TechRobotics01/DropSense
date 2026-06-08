@@ -451,7 +451,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "dropsense_v2.kicad_pro",
+    "filename": "dropsense_reciever_v2.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -611,7 +611,7 @@
   },
   "sheets": [
     [
-      "9ff7bf0e-0904-468b-b620-c02f5b22b268",
+      "105b5814-2408-4624-a7aa-d63519b53848",
       "Root"
     ]
   ],
