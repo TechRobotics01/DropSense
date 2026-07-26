@@ -10,24 +10,25 @@ Basically it consists of two parts the sender and the reciever
 # SENDER 
 the sender consists of a custom made pcb which has a an esp32 s3 wroom 1 module an microsd card holder and a mpu6050(smd)
 the sender will read the data and log it in sd card module and upomn impact that is g force greater than 5Gs then it will send info about the drop(height,time period etc) to the reciever btw this all is battery operated and it has a custom bms to power the pcb
-<img width="687" height="754" alt="image" src="https://github.com/user-attachments/assets/c5ac8032-64be-4ba0-a0b9-5dbe4b12f088" />
-<img width="786" height="695" alt="image" src="https://github.com/user-attachments/assets/58baf3d2-d3d3-48c9-804d-1076e52c4ed7" />
-<img width="1101" height="677" alt="image" src="https://github.com/user-attachments/assets/497ca33e-e46a-4cf0-879f-f6f588b93035" />
-<img width="1139" height="674" alt="image" src="https://github.com/user-attachments/assets/593e6f92-7913-440e-a417-61c0eb369822" />
+<img width="929" height="658" alt="image" src="https://github.com/user-attachments/assets/0311351a-8092-4471-968e-bcc3a091356b" />
+<img width="657" height="583" alt="image" src="https://github.com/user-attachments/assets/f962cbb1-7408-4d2d-a9bf-c70a38a921aa" />
+<img width="722" height="621" alt="image" src="https://github.com/user-attachments/assets/b8094788-d81d-48e9-9bd5-b3ddf973b9cd" />
+<img width="593" height="576" alt="image" src="https://github.com/user-attachments/assets/17191d2e-664a-4945-9712-77ee5a291479" />
+
 This devise has hexagonal walls because they are better at abosrbing impacts!
 
 
 # RECIEVER 
 The reciever consists of an esp32 s3 wroom1 module and also an 1.8 inch tft display along with a custom made BMS for charging the battery which powers the pcb 
 and the display shows all the info about the drop when it recieves the data fropm the sender 
-<img width="641" height="703" alt="image" src="https://github.com/user-attachments/assets/95ad7505-4579-4d2d-9c2c-ab9d5841f978" />
-<img width="557" height="696" alt="image" src="https://github.com/user-attachments/assets/b01d8796-d737-4b5b-81c0-f066a6e247b2" />
-<img width="1167" height="637" alt="image" src="https://github.com/user-attachments/assets/578705b5-3e22-4886-8b45-ae9020cdbfc3" />
-<img width="795" height="540" alt="image" src="https://github.com/user-attachments/assets/03c8cb1f-d1ef-437b-b207-1f0e0116e721" />
+<img width="928" height="657" alt="image" src="https://github.com/user-attachments/assets/f977aabb-da5c-4baa-a679-394620e35aa4" />
+<img width="358" height="552" alt="image" src="https://github.com/user-attachments/assets/57fb9757-1a96-4aee-8d90-e64dfc590e5d" />
+<img width="500" height="653" alt="image" src="https://github.com/user-attachments/assets/fbaf321e-8fbb-4377-8399-e875d1e401cd" />
+<img width="762" height="576" alt="image" src="https://github.com/user-attachments/assets/c4e69588-bcef-446b-84ee-7ca4f80e0153" />
+<img width="639" height="447" alt="image" src="https://github.com/user-attachments/assets/9d184bea-8cd3-432c-8dd0-3b61fc42d8c8" />
 
 ## ZINE PAGE
-<img width="1398" height="2000" alt="DROPSENSE (1)" src="https://github.com/user-attachments/assets/e06ab194-282c-4cad-b532-dbad0af92696" />
-
+<img width="1398" height="2000" alt="DROPSENSE (2)" src="https://github.com/user-attachments/assets/6b9e89c0-a626-4e91-9b81-dc540c6af1cd" />
 
 # Hardware
 This device consists of 
