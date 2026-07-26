@@ -490,7 +490,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "PCB STEP FILE/dropsense_v2.step",
+      "step": "../../../CAD/SENDER/dropsense_v2.step",
       "svg": "",
       "vrml": ""
     },

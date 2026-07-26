@@ -5,12 +5,20 @@
 #include "WiFi.h"
 #include <esp_now.h>
 
+// Pin Definitions according to Schematic
+const int SD_CS_PIN   = 10;
+const int SD_MOSI_PIN = 11;
+const int SD_SCK_PIN  = 12;
+const int SD_MISO_PIN = 13;
+
+const int SDA_PIN     = 8;
+const int SCL_PIN     = 9;
+
 uint8_t broadcastAddress[] = {0xC8, 0x2E, 0x18, 0xF7, 0x8F, 0xAC};
 
 Adafruit_MPU6050 mpu;
 Adafruit_Sensor *mpu_ax, *mpu_gr;
 
-const int CS = 5;
 File droplog; 
 
 float fallTime = 0;  
@@ -65,7 +73,10 @@ void setup() {
 
   Serial.println("MPU6050 + SD test");
 
-  if (!mpu.begin()) {
+  // Initialize custom I2C pins (SDA = 8, SCL = 9)
+  Wire.begin(SDA_PIN, SCL_PIN);
+
+  if (!mpu.begin(0x68, &Wire)) {
     Serial.println("Failed to find MPU6050 chip");
     while (1) delay(10);
   }
@@ -80,7 +91,10 @@ void setup() {
   mpu_ax->printSensorDetails();
   mpu_gr->printSensorDetails();
 
-  if (!SD.begin(CS)) {
+  // Initialize custom SPI pins for SD card
+  SPI.begin(SD_SCK_PIN, SD_MISO_PIN, SD_MOSI_PIN, SD_CS_PIN);
+
+  if (!SD.begin(SD_CS_PIN)) {
     Serial.println("SD init failed!");
     while (1);
   }
@@ -194,7 +208,7 @@ void hndlimpt(){
 
 void logdata(){ 
   droplog = SD.open("/droplog.csv", FILE_APPEND); 
- 
+
   if (droplog) {
     droplog.print(millis());
     droplog.print(",");
@@ -224,7 +238,7 @@ void setdatstosend(){
   dropdat.maxG1 = maxG;
   dropdat.gForce1 = gForce;
 
-  esp_err_t  result = esp_now_send(broadcastAddress, (uint8_t *)
+  esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *)
    &dropdat, sizeof(dropdat));
 
    if(result == ESP_OK){
