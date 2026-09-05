@@ -27,6 +27,17 @@ and the display shows all the info about the drop when it recieves the data frop
 <img width="762" height="576" alt="image" src="https://github.com/user-attachments/assets/c4e69588-bcef-446b-84ee-7ca4f80e0153" />
 <img width="639" height="447" alt="image" src="https://github.com/user-attachments/assets/9d184bea-8cd3-432c-8dd0-3b61fc42d8c8" />
 
+
+# IRL BUILD 
+## SENDER
+<img width="1990" height="1493" alt="IMG_20260905_121627" src="https://github.com/user-attachments/assets/b9a1a892-0d3a-4c18-8f32-881862a68b84" />
+<img width="554" height="424" alt="image" src="https://github.com/user-attachments/assets/817cbc2f-0208-4c86-8fc0-ec9fcf95e6e2" />
+
+## RECIEVER
+<img width="2197" height="1648" alt="IMG_20260905_121718" src="https://github.com/user-attachments/assets/147a0f29-8e00-458d-9f33-1b34c0205ff8" />
+<img width="798" height="545" alt="image" src="https://github.com/user-attachments/assets/8ac42d57-59ea-4da7-adf6-02251d590f5b" />
+
+
 ## ZINE PAGE
 <img width="1398" height="2000" alt="DROPSENSE (2)" src="https://github.com/user-attachments/assets/6b9e89c0-a626-4e91-9b81-dc540c6af1cd" />
 
