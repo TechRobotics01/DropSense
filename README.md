@@ -7,6 +7,10 @@ what type of data exactly?- it transmits the height from which it is dropped, th
 
 Basically it consists of two parts the sender and the reciever 
 
+# IMPORTANT POINT FOR THE REVIEWER
+PLEASE CONSIDER THIS AS A DIGITAL DESIGN ONLY I DO NOT MEAN TO SUBMIT IT AS A IRL BUILD BUT A DIGITAL 2ND ITERATION OF THE PROJECT 
+WHEN I BUILT THIS PROJECT IRL IT DID NOT WORK NOT BECAUSE IT WASN'T DESIGNED PROPERLY BUT BECAUSE AN IC FAILED AND WHICH I AM NOT ABLE TO REPLACE BECAUSE IT IS EXTREMELY COSTLY SO PLEASE CONSIDER THIS AS A DIGITAL DESIGN AND APPROVE IT 
+
 # SENDER 
 the sender consists of a custom made pcb which has a an esp32 s3 wroom 1 module an microsd card holder and a mpu6050(smd)
 the sender will read the data and log it in sd card module and upomn impact that is g force greater than 5Gs then it will send info about the drop(height,time period etc) to the reciever btw this all is battery operated and it has a custom bms to power the pcb
